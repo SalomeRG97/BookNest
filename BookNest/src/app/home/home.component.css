@@ -1,0 +1,55 @@
+/* Estilo del banner */
+.banner {
+  background-image: url("../home/../assets/banner.jpg"); /* Ruta correcta de la imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Hace que la imagen se quede fija mientras se hace scroll */
+  height: 300px; /* Altura para pantallas grandes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para el texto */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* Título y párrafo dentro del banner */
+.banner h1 {
+  font-size: 3rem; /* Tamaño de fuente grande */
+  margin: 0;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 1.5rem; /* Tamaño de fuente mediano */
+  font-weight: bold;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .banner {
+    height: 200px; /* Altura más pequeña para pantallas medianas */
+  }
+
+  .banner h1 {
+    font-size: 2rem; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+
+  .banner p {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .banner {
+    height: 150px; /* Altura aún más pequeña para móviles */
+  }
+
+  .banner h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+  }
+
+  .banner p {
+    font-size: 0.9rem; /* Reduce aún más el tamaño del texto */
+  }
+}
